@@ -10,14 +10,17 @@ function convertToRoman(num) {
     };
 
   //your code here
-	let result=''
-	for (let[symb,val] of  Object.entries(obj)){
-		while(num>=val){
-			result=result+symb;
-			num=num-val;
-		}
-	}
-	return result;
+  let result = '';
+  for (let [symb, val] of Object.entries(obj)) {
+    while (num >= val) {
+      result = result + symb;
+      num = num - val;
+    }
+  }
+
+  return result;
+}
+
  
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
