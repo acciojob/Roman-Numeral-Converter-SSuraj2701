@@ -11,7 +11,7 @@ function convertToRoman(num) {
 
   //your code here
 	let result=''
-	for (let[symb,val] of obj){
+	for (let[symb,val] of  Object.entries(obj)){
 		while(num>=val){
 			result=result+symb;
 			num=num-val;
